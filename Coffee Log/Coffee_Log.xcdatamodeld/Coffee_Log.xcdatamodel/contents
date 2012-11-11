@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="JPCoffee" syncable="YES">
+        <attribute name="acidity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="bean" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateBought" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="decaf" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="displayColor" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="fairTrade" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="flavourNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organic" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="organicCertification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="otherNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="process" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roast" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPImage" inverseName="coffee" inverseEntity="JPImage" syncable="YES"/>
+        <relationship name="plantation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPPlantation" inverseName="coffees" inverseEntity="JPPlantation" syncable="YES"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPReview" inverseName="coffee" inverseEntity="JPReview" syncable="YES"/>
+        <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="coffees" inverseEntity="JPShop" syncable="YES"/>
+    </entity>
+    <entity name="JPCountry" syncable="YES">
+        <attribute name="continent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="plantations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPPlantation" inverseName="country" inverseEntity="JPPlantation" syncable="YES"/>
+        <relationship name="shops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPShop" inverseName="country" inverseEntity="JPShop" syncable="YES"/>
+    </entity>
+    <entity name="JPImage" syncable="YES">
+        <attribute name="image" optional="YES" syncable="YES"/>
+        <attribute name="sizeKey" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coffee" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="images" inverseEntity="JPCoffee" syncable="YES"/>
+        <relationship name="plantation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPPlantation" inverseName="images" inverseEntity="JPPlantation" syncable="YES"/>
+        <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="images" inverseEntity="JPShop" syncable="YES"/>
+    </entity>
+    <entity name="JPPlantation" syncable="YES">
+        <attribute name="city" optional="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" syncable="YES"/>
+        <attribute name="nameOfOwner" optional="YES" syncable="YES"/>
+        <attribute name="town" optional="YES" syncable="YES"/>
+        <relationship name="coffees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="plantation" inverseEntity="JPCoffee" syncable="YES"/>
+        <relationship name="country" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCountry" inverseName="plantations" inverseEntity="JPCountry" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPImage" inverseName="plantation" inverseEntity="JPImage" syncable="YES"/>
+    </entity>
+    <entity name="JPReview" syncable="YES">
+        <attribute name="rating" optional="YES" syncable="YES"/>
+        <attribute name="reviewNotes" optional="YES" syncable="YES"/>
+        <relationship name="coffee" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="reviews" inverseEntity="JPCoffee" syncable="YES"/>
+        <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="reviews" inverseEntity="JPShop" syncable="YES"/>
+    </entity>
+    <entity name="JPShop" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coordinates" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openingHours" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="postCode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="coffees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="shop" inverseEntity="JPCoffee" syncable="YES"/>
+        <relationship name="country" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCountry" inverseName="shops" inverseEntity="JPCountry" syncable="YES"/>
+        <relationship name="images" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPImage" inverseName="shop" inverseEntity="JPImage" syncable="YES"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPReview" inverseName="shop" inverseEntity="JPReview" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
+        <element name="JPCoffee" positionX="-36" positionY="-621" width="128" height="328"/>
+        <element name="JPCountry" positionX="-477" positionY="-126" width="128" height="103"/>
+        <element name="JPShop" positionX="205" positionY="-117" width="128" height="208"/>
+        <element name="JPImage" positionX="-54" positionY="-144" width="128" height="118"/>
+        <element name="JPPlantation" positionX="-324" positionY="-243" width="128" height="148"/>
+        <element name="JPReview" positionX="153" positionY="-490" width="128" height="103"/>
     </elements>
 </model>

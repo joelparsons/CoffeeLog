@@ -131,11 +131,9 @@
 				5D3027421650444C0015C8A8 /* JPAppDelegate.h */,
 				5D3027431650444C0015C8A8 /* JPAppDelegate.m */,
 				5D30274B1650444C0015C8A8 /* MainStoryboard.storyboard */,
-				5D3027511650444C0015C8A8 /* JPMasterViewController.h */,
-				5D3027521650444C0015C8A8 /* JPMasterViewController.m */,
-				5D3027541650444C0015C8A8 /* JPDetailViewController.h */,
-				5D3027551650444C0015C8A8 /* JPDetailViewController.m */,
-				5D30274E1650444C0015C8A8 /* Coffee_Log.xcdatamodeld */,
+				5D302779165044FB0015C8A8 /* Model */,
+				5D30277B165045030015C8A8 /* View */,
+				5D30277C165045060015C8A8 /* Controller */,
 				5D30273A1650444C0015C8A8 /* Supporting Files */,
 			);
 			path = "Coffee Log";
@@ -172,6 +170,32 @@
 				5D3027671650444D0015C8A8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D302779165044FB0015C8A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D30274E1650444C0015C8A8 /* Coffee_Log.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5D30277B165045030015C8A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5D30277C165045060015C8A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D3027511650444C0015C8A8 /* JPMasterViewController.h */,
+				5D3027521650444C0015C8A8 /* JPMasterViewController.m */,
+				5D3027541650444C0015C8A8 /* JPDetailViewController.h */,
+				5D3027551650444C0015C8A8 /* JPDetailViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +488,7 @@
 				5D3027711650444D0015C8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D3027721650444D0015C8A8 /* Build configuration list for PBXNativeTarget "Coffee LogTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +497,7 @@
 				5D3027741650444D0015C8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

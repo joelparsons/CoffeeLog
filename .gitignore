@@ -13,3 +13,13 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+
+# OS X Finder
+.DS_Store
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep

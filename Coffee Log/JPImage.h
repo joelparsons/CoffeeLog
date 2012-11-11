@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class JPCoffee, JPShop;
+@class JPCoffee, JPPlantation, JPShop;
 
 @interface JPImage : NSManagedObject
 
 @property (nonatomic, retain) NSString * sizeKey;
-@property (nonatomic, retain) UNKNOWN_TYPE image;
+@property (nonatomic, retain) NSData * image;
 @property (nonatomic, retain) JPShop *shop;
 @property (nonatomic, retain) JPCoffee *coffee;
-@property (nonatomic, retain) NSManagedObject *plantation;
+@property (nonatomic, retain) JPPlantation *plantation;
 
 @end

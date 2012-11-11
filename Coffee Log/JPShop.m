@@ -9,6 +9,7 @@
 #import "JPShop.h"
 #import "JPCoffee.h"
 #import "JPCountry.h"
+#import "JPImage.h"
 #import "JPReview.h"
 
 

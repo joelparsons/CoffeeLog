@@ -8,6 +8,7 @@
 
 #import "JPImage.h"
 #import "JPCoffee.h"
+#import "JPPlantation.h"
 #import "JPShop.h"
 
 

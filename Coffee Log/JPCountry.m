@@ -7,6 +7,8 @@
 //
 
 #import "JPCountry.h"
+#import "JPPlantation.h"
+#import "JPShop.h"
 
 
 @implementation JPCountry

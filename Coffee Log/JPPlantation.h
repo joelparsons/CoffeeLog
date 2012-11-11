@@ -13,10 +13,10 @@
 
 @interface JPPlantation : NSManagedObject
 
-@property (nonatomic, retain) UNKNOWN_TYPE name;
-@property (nonatomic, retain) UNKNOWN_TYPE town;
-@property (nonatomic, retain) UNKNOWN_TYPE city;
-@property (nonatomic, retain) UNKNOWN_TYPE nameOfOwner;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * town;
+@property (nonatomic, retain) NSString * city;
+@property (nonatomic, retain) NSString * nameOfOwner;
 @property (nonatomic, retain) JPCountry *country;
 @property (nonatomic, retain) NSSet *coffees;
 @property (nonatomic, retain) NSSet *images;

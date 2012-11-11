@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class JPCoffee, JPCountry, JPReview;
+@class JPCoffee, JPCountry, JPImage, JPReview;
 
 @interface JPShop : NSManagedObject
 
@@ -21,7 +21,7 @@
 @property (nonatomic, retain) id openingHours;
 @property (nonatomic, retain) id coordinates;
 @property (nonatomic, retain) JPCountry *country;
-@property (nonatomic, retain) NSManagedObject *images;
+@property (nonatomic, retain) JPImage *images;
 @property (nonatomic, retain) NSSet *coffees;
 @property (nonatomic, retain) NSSet *reviews;
 @end

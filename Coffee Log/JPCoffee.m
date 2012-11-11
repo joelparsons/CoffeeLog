@@ -7,7 +7,10 @@
 //
 
 #import "JPCoffee.h"
+#import "JPImage.h"
+#import "JPPlantation.h"
 #import "JPReview.h"
+#import "JPShop.h"
 
 
 @implementation JPCoffee

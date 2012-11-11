@@ -7,6 +7,8 @@
 //
 
 #import "JPReview.h"
+#import "JPCoffee.h"
+#import "JPShop.h"
 
 
 @implementation JPReview

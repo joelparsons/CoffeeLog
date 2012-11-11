@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class JPPlantation, JPShop;
 
 @interface JPCountry : NSManagedObject
 
@@ -20,13 +21,13 @@
 
 @interface JPCountry (CoreDataGeneratedAccessors)
 
-- (void)addShopsObject:(NSManagedObject *)value;
-- (void)removeShopsObject:(NSManagedObject *)value;
+- (void)addShopsObject:(JPShop *)value;
+- (void)removeShopsObject:(JPShop *)value;
 - (void)addShops:(NSSet *)values;
 - (void)removeShops:(NSSet *)values;
 
-- (void)addPlantationsObject:(NSManagedObject *)value;
-- (void)removePlantationsObject:(NSManagedObject *)value;
+- (void)addPlantationsObject:(JPPlantation *)value;
+- (void)removePlantationsObject:(JPPlantation *)value;
 - (void)addPlantations:(NSSet *)values;
 - (void)removePlantations:(NSSet *)values;
 

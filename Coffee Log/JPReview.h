@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class JPCoffee, JPShop;
 
 @interface JPReview : NSManagedObject
 
-@property (nonatomic, retain) UNKNOWN_TYPE rating;
-@property (nonatomic, retain) UNKNOWN_TYPE reviewNotes;
-@property (nonatomic, retain) NSManagedObject *coffee;
-@property (nonatomic, retain) NSManagedObject *shop;
+@property (nonatomic, retain) NSNumber * rating;
+@property (nonatomic, retain) NSString * reviewNotes;
+@property (nonatomic, retain) JPCoffee *coffee;
+@property (nonatomic, retain) JPShop *shop;
 
 @end

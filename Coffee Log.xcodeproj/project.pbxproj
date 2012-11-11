@@ -33,6 +33,7 @@
 		5D30278816504DEF0015C8A8 /* JPShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278716504DEF0015C8A8 /* JPShop.m */; };
 		5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278A16504DEF0015C8A8 /* JPImage.m */; };
 		5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278D16504DEF0015C8A8 /* JPPlantation.m */; };
+		5D3027A41650517B0015C8A8 /* JPCoordinateValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027A31650517B0015C8A8 /* JPCoordinateValueTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		5D30278A16504DEF0015C8A8 /* JPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImage.m; sourceTree = "<group>"; };
 		5D30278C16504DEF0015C8A8 /* JPPlantation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPlantation.h; sourceTree = "<group>"; };
 		5D30278D16504DEF0015C8A8 /* JPPlantation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPlantation.m; sourceTree = "<group>"; };
+		5D3027A21650517A0015C8A8 /* JPCoordinateValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCoordinateValueTransformer.h; sourceTree = "<group>"; };
+		5D3027A31650517B0015C8A8 /* JPCoordinateValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCoordinateValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,7 @@
 		5D302779165044FB0015C8A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D3027A11650514F0015C8A8 /* ValueTransformers */,
 				5D30274E1650444C0015C8A8 /* Coffee_Log.xcdatamodeld */,
 				5D30278C16504DEF0015C8A8 /* JPPlantation.h */,
 				5D30278D16504DEF0015C8A8 /* JPPlantation.m */,
@@ -226,6 +230,15 @@
 				5D3027551650444C0015C8A8 /* JPDetailViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		5D3027A11650514F0015C8A8 /* ValueTransformers */ = {
+			isa = PBXGroup;
+			children = (
+				5D3027A21650517A0015C8A8 /* JPCoordinateValueTransformer.h */,
+				5D3027A31650517B0015C8A8 /* JPCoordinateValueTransformer.m */,
+			);
+			name = ValueTransformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +363,7 @@
 				5D30278816504DEF0015C8A8 /* JPShop.m in Sources */,
 				5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */,
 				5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */,
+				5D3027A41650517B0015C8A8 /* JPCoordinateValueTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

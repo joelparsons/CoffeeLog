@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class JPReview;
+@class JPImage, JPPlantation, JPReview, JPShop;
 
 @interface JPCoffee : NSManagedObject
 
@@ -29,15 +29,15 @@
 @property (nonatomic, retain) NSNumber * organic;
 @property (nonatomic, retain) NSString * otherNotes;
 @property (nonatomic, retain) NSSet *images;
-@property (nonatomic, retain) NSManagedObject *plantation;
-@property (nonatomic, retain) NSManagedObject *shop;
+@property (nonatomic, retain) JPPlantation *plantation;
+@property (nonatomic, retain) JPShop *shop;
 @property (nonatomic, retain) NSSet *reviews;
 @end
 
 @interface JPCoffee (CoreDataGeneratedAccessors)
 
-- (void)addImagesObject:(NSManagedObject *)value;
-- (void)removeImagesObject:(NSManagedObject *)value;
+- (void)addImagesObject:(JPImage *)value;
+- (void)removeImagesObject:(JPImage *)value;
 - (void)addImages:(NSSet *)values;
 - (void)removeImages:(NSSet *)values;
 

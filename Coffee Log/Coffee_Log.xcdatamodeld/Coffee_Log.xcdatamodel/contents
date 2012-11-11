@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="JPCoffee" syncable="YES">
+    <entity name="JPCoffee" representedClassName="JPCoffee" syncable="YES">
         <attribute name="acidity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="bean" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
@@ -21,20 +21,20 @@
         <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPReview" inverseName="coffee" inverseEntity="JPReview" syncable="YES"/>
         <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="coffees" inverseEntity="JPShop" syncable="YES"/>
     </entity>
-    <entity name="JPCountry" syncable="YES">
+    <entity name="JPCountry" representedClassName="JPCountry" syncable="YES">
         <attribute name="continent" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="plantations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPPlantation" inverseName="country" inverseEntity="JPPlantation" syncable="YES"/>
         <relationship name="shops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPShop" inverseName="country" inverseEntity="JPShop" syncable="YES"/>
     </entity>
-    <entity name="JPImage" syncable="YES">
+    <entity name="JPImage" representedClassName="JPImage" syncable="YES">
         <attribute name="image" optional="YES" syncable="YES"/>
         <attribute name="sizeKey" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="coffee" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="images" inverseEntity="JPCoffee" syncable="YES"/>
         <relationship name="plantation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPPlantation" inverseName="images" inverseEntity="JPPlantation" syncable="YES"/>
         <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="images" inverseEntity="JPShop" syncable="YES"/>
     </entity>
-    <entity name="JPPlantation" syncable="YES">
+    <entity name="JPPlantation" representedClassName="JPPlantation" syncable="YES">
         <attribute name="city" optional="YES" syncable="YES"/>
         <attribute name="name" optional="YES" syncable="YES"/>
         <attribute name="nameOfOwner" optional="YES" syncable="YES"/>
@@ -43,13 +43,13 @@
         <relationship name="country" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCountry" inverseName="plantations" inverseEntity="JPCountry" syncable="YES"/>
         <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JPImage" inverseName="plantation" inverseEntity="JPImage" syncable="YES"/>
     </entity>
-    <entity name="JPReview" syncable="YES">
+    <entity name="JPReview" representedClassName="JPReview" syncable="YES">
         <attribute name="rating" optional="YES" syncable="YES"/>
         <attribute name="reviewNotes" optional="YES" syncable="YES"/>
         <relationship name="coffee" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPCoffee" inverseName="reviews" inverseEntity="JPCoffee" syncable="YES"/>
         <relationship name="shop" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JPShop" inverseName="reviews" inverseEntity="JPShop" syncable="YES"/>
     </entity>
-    <entity name="JPShop" syncable="YES">
+    <entity name="JPShop" representedClassName="JPShop" syncable="YES">
         <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>

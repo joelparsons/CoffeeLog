@@ -27,6 +27,12 @@
 		5D3027611650444D0015C8A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3027371650444C0015C8A8 /* CoreData.framework */; };
 		5D3027691650444D0015C8A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D3027671650444D0015C8A8 /* InfoPlist.strings */; };
 		5D30276C1650444D0015C8A8 /* Coffee_LogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30276B1650444D0015C8A8 /* Coffee_LogTests.m */; };
+		5D30277F16504DEF0015C8A8 /* JPCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30277E16504DEF0015C8A8 /* JPCountry.m */; };
+		5D30278216504DEF0015C8A8 /* JPReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278116504DEF0015C8A8 /* JPReview.m */; };
+		5D30278516504DEF0015C8A8 /* JPCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278416504DEF0015C8A8 /* JPCoffee.m */; };
+		5D30278816504DEF0015C8A8 /* JPShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278716504DEF0015C8A8 /* JPShop.m */; };
+		5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278A16504DEF0015C8A8 /* JPImage.m */; };
+		5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278D16504DEF0015C8A8 /* JPPlantation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +72,18 @@
 		5D3027681650444D0015C8A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D30276A1650444D0015C8A8 /* Coffee_LogTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coffee_LogTests.h; sourceTree = "<group>"; };
 		5D30276B1650444D0015C8A8 /* Coffee_LogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coffee_LogTests.m; sourceTree = "<group>"; };
+		5D30277D16504DEF0015C8A8 /* JPCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCountry.h; sourceTree = "<group>"; };
+		5D30277E16504DEF0015C8A8 /* JPCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCountry.m; sourceTree = "<group>"; };
+		5D30278016504DEF0015C8A8 /* JPReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPReview.h; sourceTree = "<group>"; };
+		5D30278116504DEF0015C8A8 /* JPReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPReview.m; sourceTree = "<group>"; };
+		5D30278316504DEF0015C8A8 /* JPCoffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCoffee.h; sourceTree = "<group>"; };
+		5D30278416504DEF0015C8A8 /* JPCoffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCoffee.m; sourceTree = "<group>"; };
+		5D30278616504DEF0015C8A8 /* JPShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPShop.h; sourceTree = "<group>"; };
+		5D30278716504DEF0015C8A8 /* JPShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPShop.m; sourceTree = "<group>"; };
+		5D30278916504DEF0015C8A8 /* JPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImage.h; sourceTree = "<group>"; };
+		5D30278A16504DEF0015C8A8 /* JPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImage.m; sourceTree = "<group>"; };
+		5D30278C16504DEF0015C8A8 /* JPPlantation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPlantation.h; sourceTree = "<group>"; };
+		5D30278D16504DEF0015C8A8 /* JPPlantation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPlantation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +194,18 @@
 			isa = PBXGroup;
 			children = (
 				5D30274E1650444C0015C8A8 /* Coffee_Log.xcdatamodeld */,
+				5D30278C16504DEF0015C8A8 /* JPPlantation.h */,
+				5D30278D16504DEF0015C8A8 /* JPPlantation.m */,
+				5D30278916504DEF0015C8A8 /* JPImage.h */,
+				5D30278A16504DEF0015C8A8 /* JPImage.m */,
+				5D30278616504DEF0015C8A8 /* JPShop.h */,
+				5D30278716504DEF0015C8A8 /* JPShop.m */,
+				5D30278316504DEF0015C8A8 /* JPCoffee.h */,
+				5D30278416504DEF0015C8A8 /* JPCoffee.m */,
+				5D30278016504DEF0015C8A8 /* JPReview.h */,
+				5D30278116504DEF0015C8A8 /* JPReview.m */,
+				5D30277D16504DEF0015C8A8 /* JPCountry.h */,
+				5D30277E16504DEF0015C8A8 /* JPCountry.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -314,6 +344,12 @@
 				5D3027501650444C0015C8A8 /* Coffee_Log.xcdatamodeld in Sources */,
 				5D3027531650444C0015C8A8 /* JPMasterViewController.m in Sources */,
 				5D3027561650444C0015C8A8 /* JPDetailViewController.m in Sources */,
+				5D30277F16504DEF0015C8A8 /* JPCountry.m in Sources */,
+				5D30278216504DEF0015C8A8 /* JPReview.m in Sources */,
+				5D30278516504DEF0015C8A8 /* JPCoffee.m in Sources */,
+				5D30278816504DEF0015C8A8 /* JPShop.m in Sources */,
+				5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */,
+				5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

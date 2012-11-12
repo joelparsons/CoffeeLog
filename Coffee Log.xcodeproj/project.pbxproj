@@ -19,8 +19,7 @@
 		5D30274A1650444C0015C8A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3027491650444C0015C8A8 /* Default-568h@2x.png */; };
 		5D30274D1650444C0015C8A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D30274B1650444C0015C8A8 /* MainStoryboard.storyboard */; };
 		5D3027501650444C0015C8A8 /* Coffee_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D30274E1650444C0015C8A8 /* Coffee_Log.xcdatamodeld */; };
-		5D3027531650444C0015C8A8 /* JPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027521650444C0015C8A8 /* JPMasterViewController.m */; };
-		5D3027561650444C0015C8A8 /* JPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027551650444C0015C8A8 /* JPDetailViewController.m */; };
+		5D3027531650444C0015C8A8 /* JPCoffeeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027521650444C0015C8A8 /* JPCoffeeListViewController.m */; };
 		5D30275E1650444D0015C8A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D30275D1650444D0015C8A8 /* SenTestingKit.framework */; };
 		5D30275F1650444D0015C8A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3027311650444C0015C8A8 /* UIKit.framework */; };
 		5D3027601650444D0015C8A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3027331650444C0015C8A8 /* Foundation.framework */; };
@@ -33,6 +32,10 @@
 		5D30278816504DEF0015C8A8 /* JPShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278716504DEF0015C8A8 /* JPShop.m */; };
 		5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278A16504DEF0015C8A8 /* JPImage.m */; };
 		5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30278D16504DEF0015C8A8 /* JPPlantation.m */; };
+		5D3027AB165070F50015C8A8 /* JPNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027AA165070F50015C8A8 /* JPNotesViewController.m */; };
+		5D3027AE165070FF0015C8A8 /* JPShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027AD165070FF0015C8A8 /* JPShopListViewController.m */; };
+		5D3027B1165071080015C8A8 /* JPPlantationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027B0165071080015C8A8 /* JPPlantationListViewController.m */; };
+		5D3027B4165071D80015C8A8 /* JPCoffeeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3027B3165071D80015C8A8 /* JPCoffeeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +65,8 @@
 		5D3027491650444C0015C8A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D30274C1650444C0015C8A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5D30274F1650444C0015C8A8 /* Coffee_Log.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coffee_Log.xcdatamodel; sourceTree = "<group>"; };
-		5D3027511650444C0015C8A8 /* JPMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMasterViewController.h; sourceTree = "<group>"; };
-		5D3027521650444C0015C8A8 /* JPMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMasterViewController.m; sourceTree = "<group>"; };
-		5D3027541650444C0015C8A8 /* JPDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPDetailViewController.h; sourceTree = "<group>"; };
-		5D3027551650444C0015C8A8 /* JPDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPDetailViewController.m; sourceTree = "<group>"; };
+		5D3027511650444C0015C8A8 /* JPCoffeeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCoffeeListViewController.h; sourceTree = "<group>"; };
+		5D3027521650444C0015C8A8 /* JPCoffeeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPCoffeeListViewController.m; sourceTree = "<group>"; };
 		5D30275C1650444D0015C8A8 /* Coffee LogTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee LogTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D30275D1650444D0015C8A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D3027661650444D0015C8A8 /* Coffee LogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coffee LogTests-Info.plist"; sourceTree = "<group>"; };
@@ -84,6 +85,14 @@
 		5D30278A16504DEF0015C8A8 /* JPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImage.m; sourceTree = "<group>"; };
 		5D30278C16504DEF0015C8A8 /* JPPlantation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPlantation.h; sourceTree = "<group>"; };
 		5D30278D16504DEF0015C8A8 /* JPPlantation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPlantation.m; sourceTree = "<group>"; };
+		5D3027A9165070F50015C8A8 /* JPNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNotesViewController.h; sourceTree = "<group>"; };
+		5D3027AA165070F50015C8A8 /* JPNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNotesViewController.m; sourceTree = "<group>"; };
+		5D3027AC165070FF0015C8A8 /* JPShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPShopListViewController.h; sourceTree = "<group>"; };
+		5D3027AD165070FF0015C8A8 /* JPShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPShopListViewController.m; sourceTree = "<group>"; };
+		5D3027AF165071080015C8A8 /* JPPlantationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPlantationListViewController.h; sourceTree = "<group>"; };
+		5D3027B0165071080015C8A8 /* JPPlantationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPlantationListViewController.m; sourceTree = "<group>"; };
+		5D3027B2165071D80015C8A8 /* JPCoffeeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCoffeeDetailViewController.h; sourceTree = "<group>"; };
+		5D3027B3165071D80015C8A8 /* JPCoffeeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCoffeeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +217,16 @@
 		5D30277C165045060015C8A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5D3027511650444C0015C8A8 /* JPMasterViewController.h */,
-				5D3027521650444C0015C8A8 /* JPMasterViewController.m */,
-				5D3027541650444C0015C8A8 /* JPDetailViewController.h */,
-				5D3027551650444C0015C8A8 /* JPDetailViewController.m */,
+				5D3027511650444C0015C8A8 /* JPCoffeeListViewController.h */,
+				5D3027521650444C0015C8A8 /* JPCoffeeListViewController.m */,
+				5D3027B2165071D80015C8A8 /* JPCoffeeDetailViewController.h */,
+				5D3027B3165071D80015C8A8 /* JPCoffeeDetailViewController.m */,
+				5D3027A9165070F50015C8A8 /* JPNotesViewController.h */,
+				5D3027AA165070F50015C8A8 /* JPNotesViewController.m */,
+				5D3027AC165070FF0015C8A8 /* JPShopListViewController.h */,
+				5D3027AD165070FF0015C8A8 /* JPShopListViewController.m */,
+				5D3027AF165071080015C8A8 /* JPPlantationListViewController.h */,
+				5D3027B0165071080015C8A8 /* JPPlantationListViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -350,14 +365,17 @@
 				5D3027401650444C0015C8A8 /* main.m in Sources */,
 				5D3027441650444C0015C8A8 /* JPAppDelegate.m in Sources */,
 				5D3027501650444C0015C8A8 /* Coffee_Log.xcdatamodeld in Sources */,
-				5D3027531650444C0015C8A8 /* JPMasterViewController.m in Sources */,
-				5D3027561650444C0015C8A8 /* JPDetailViewController.m in Sources */,
+				5D3027531650444C0015C8A8 /* JPCoffeeListViewController.m in Sources */,
 				5D30277F16504DEF0015C8A8 /* JPCountry.m in Sources */,
 				5D30278216504DEF0015C8A8 /* JPReview.m in Sources */,
 				5D30278516504DEF0015C8A8 /* JPCoffee.m in Sources */,
 				5D30278816504DEF0015C8A8 /* JPShop.m in Sources */,
 				5D30278B16504DEF0015C8A8 /* JPImage.m in Sources */,
 				5D30278E16504DEF0015C8A8 /* JPPlantation.m in Sources */,
+				5D3027AB165070F50015C8A8 /* JPNotesViewController.m in Sources */,
+				5D3027AE165070FF0015C8A8 /* JPShopListViewController.m in Sources */,
+				5D3027B1165071080015C8A8 /* JPPlantationListViewController.m in Sources */,
+				5D3027B4165071D80015C8A8 /* JPCoffeeDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

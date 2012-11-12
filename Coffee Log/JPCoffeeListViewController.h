@@ -10,7 +10,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface JPMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface JPCoffeeListViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

@@ -8,19 +8,23 @@
 
 #import "JPAppDelegate.h"
 
-#import "JPMasterViewController.h"
+#import "JPCoffeeListViewController.h"
+
+@interface JPAppDelegate ()
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@end
 
 @implementation JPAppDelegate
-
-@synthesize managedObjectContext = _managedObjectContext;
-@synthesize managedObjectModel = _managedObjectModel;
-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    JPMasterViewController *controller = (JPMasterViewController *)navigationController.topViewController;
+    JPCoffeeListViewController *controller = (JPCoffeeListViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
